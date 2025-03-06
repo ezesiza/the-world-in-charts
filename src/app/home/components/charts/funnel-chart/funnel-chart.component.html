@@ -1,1 +1,40 @@
-<p>funnel-chart works!</p>
+<!-- <div class="button-group" id="voronoi">
+    <header>
+        <div class="header">
+            <h1>Funnel Chart</h1>
+            <div class="button-group">
+                <button class="button" routerLink="">&laquo; Home</button>
+              
+                <button class="button button2" routerLink="/browser">Next &raquo;</button>
+                <div class="controls">
+                    <form-select (schemeChange)="onSchemeChange($event)" (styleChange)="onStyleChange($event)"
+                        (percentageToggle)="onPercentageToggle($event)"
+                        (pctOptionChange)="onPctOptionChange($event)"></form-select>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+<single-card>
+    <div class="panel-body" id="svg_container">
+        <div id="svg_container">
+            <img id="img" width=1 height=1 />
+            <div id="chart"></div>
+        </div>
+    </div>
+</single-card> -->
+<mat-grid-list cols="4" rowHeight="100px">
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="">Select to change color</mat-grid-tile>
+
+</mat-grid-list>
+<mat-card appearance="outlined">
+    <mat-card-content>
+        <div class="panel-body" id="svg_container">
+            <div id="svg_container">
+                <img id="img" width=1 height=1 />
+                <div id="chart"></div>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>
