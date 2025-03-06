@@ -1,4 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+// =====================================================================
+// CONSTANTS
+// =====================================================================
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@font-family: 'Roboto', sans-serif;
+
+// =====================================================================
+// MEDIA QUERIES
+// =====================================================================
+
+.app-container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: @max-page-width;
+}
+
+
+@media-min-large-width: 57.3rem;
+@extended-page-width: 80rem;
+@extra-large-page-width: 100rem; // roughly 1600px
+@max-page-width: 999rem;
+//116rem
