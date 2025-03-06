@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home/home.component';
 import { LandingComponent } from './home/components/landing/landing.component';
 import { AngularMaterialModules } from './modules/angular-material.module';
 import { FormSelectComponent } from './home/shared/form-select/form-select.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { FormSelectComponent } from './home/shared/form-select/form-select.compo
   imports: [
     [...AngularMaterialModules],
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule
   ],
